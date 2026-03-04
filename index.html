@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>Abhinab Modak | Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abhinab Modak's personal portfolio website showcasing skills in web development, programming, and music.">
-    <meta name="keywords" content="AR Ratna, gemstones, diamond, ruby, sapphire, emerald">
-    <meta name="author" content="AR Ratna">
+    <meta name="description" content="Hello this my personal portfolio website showcasing skills in web development, programming, and music.">
+    <meta name="keywords" content="Abhinab Modak, personal portfolio, web development, programming, music">
+    <meta name="author" content="Abhinab Modak">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #132855;
-            background-image: url('BG PIC.jpg');
+            /* background-image: url('BG PIC.jpg'); */
+            /* background-clip: url('black hole.mp4') ; */
             background-size: 100% 10%;
             color: rgb(245, 237, 237);
             line-height: 1.7;
@@ -93,7 +94,25 @@
             0% { border-color: white; }
             50% { border-color: transparent; }
             100% { border-color: white; }
-     }
+        }
+
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            max-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit:cover;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+
 
     </style>
 </head>
@@ -105,6 +124,11 @@
     <span id="typing"></span>
     </h3>
 </header>
+
+<video autoplay muted loop id="bg-video">
+    <source src="black hole.mp4" type="video/mp4">
+</video>
+
 
 <section>
     
